@@ -1,0 +1,7 @@
+#Fri Jul 25 22:07:15 CEST 2014
+eclipse.preferences.version=1
+environment/project/com.xmos.cdt.toolchain.574928032/XMOS_MODULE_PATH/delimiter=\:
+environment/project/com.xmos.cdt.toolchain.574928032/XMOS_MODULE_PATH/operation=append
+environment/project/com.xmos.cdt.toolchain.574928032/XMOS_MODULE_PATH/value=/home/dmamalis/workspace/Xmos/FINALMicroGreenhouse/app_Top\:/home/dmamalis/workspace/Xmos/FINALMicroGreenhouse/app_koua\:/home/dmamalis/workspace/Xmos/FINALMicroGreenhouse/module_AirControl\:/home/dmamalis/workspace/Xmos/FINALMicroGreenhouse/module_BlinkM\:/home/dmamalis/workspace/Xmos/FINALMicroGreenhouse/module_COZIR\:/home/dmamalis/workspace/Xmos/FINALMicroGreenhouse/module_EC\:/home/dmamalis/workspace/Xmos/FINALMicroGreenhouse/module_PulseModulation\:/home/dmamalis/workspace/Xmos/FINALMicroGreenhouse/module_SHT75\:/home/dmamalis/workspace/Xmos/FINALMicroGreenhouse/module_Servo\:/home/dmamalis/workspace/Xmos/FINALMicroGreenhouse/module_SimpleUART\:/home/dmamalis/workspace/Xmos/FINALMicroGreenhouse/module_WaterControl\:/home/dmamalis/workspace/Xmos/FINALMicroGreenhouse/module_i2c_single_port
+environment/project/com.xmos.cdt.toolchain.574928032/append=true
+environment/project/com.xmos.cdt.toolchain.574928032/appendContributed=true

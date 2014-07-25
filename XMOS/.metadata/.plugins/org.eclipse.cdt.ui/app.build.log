@@ -1,0 +1,7 @@
+
+**** Build of configuration Default for project app ****
+
+xmake CONFIG=Default all 
+Using modules: module_ethernet module_ethernet_board_support module_ethernet_smi module_webserver module_xtcp module_locks module_mutual_thread_comm module_otp_board_info
+xmake[1]: `bin//app.xe' is up to date.
+Build Complete

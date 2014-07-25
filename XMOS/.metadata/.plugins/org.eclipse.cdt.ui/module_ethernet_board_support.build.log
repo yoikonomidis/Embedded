@@ -1,0 +1,5 @@
+
+**** Build of configuration Default for project module_ethernet_board_support ****
+
+xmake -f .makefile all 
+** Module only - only builds as part of application **

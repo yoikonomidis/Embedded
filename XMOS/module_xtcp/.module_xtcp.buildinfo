@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<allbuildresults>
+<buildresults component="module_xtcp" packagename="xm-local-sc_xtcp(3.2.1rc1)" packageversion="3.2.1rc1" toolsversion="latest">
+<buildresult>
+<configuration>
+<parameter id="separate_mac" value="true"/>
+<parameter id="num_clients" value="1"/>
+<parameter id="combine_smi_ports" value="false"/>
+<parameter id="use_reset" value="true"/>
+</configuration>
+<resourceusage>
+<resourceusageitem id="cores" value="1"/>
+<resourceusageitem id="memory" value="0"/>
+<resourceusageitem id="codememory" value="16192"/>
+<resourceusageitem id="datamemory" value="4908"/>
+<resourceusageitem id="ports1bit" value="0"/>
+<resourceusageitem id="ports4bit" value="0"/>
+<resourceusageitem id="ports8bit" value="0"/>
+<resourceusageitem id="ports16bit" value="0"/>
+<resourceusageitem id="ports32bit" value="0"/>
+<resourceusageitem id="clocks" value="0"/>
+<resourceusageitem id="chanends" value="3"/>
+<resourceusageitem id="timers" value="0"/>
+<resourceusageitem id="hwtimers" value="0"/>
+<resourceusageitem id="distributed_tasks" value="0"/>
+<resourceusageitem id="combined_tasks" value="0"/>
+</resourceusage>
+</buildresult>
+<buildresult>
+<configuration>
+<parameter id="separate_mac" value="true"/>
+<parameter id="num_clients" value="8"/>
+<parameter id="combine_smi_ports" value="false"/>
+<parameter id="use_reset" value="true"/>
+</configuration>
+<resourceusage>
+<resourceusageitem id="cores" value="1"/>
+<resourceusageitem id="memory" value="0"/>
+<resourceusageitem id="codememory" value="16348"/>
+<resourceusageitem id="datamemory" value="5148"/>
+<resourceusageitem id="ports1bit" value="0"/>
+<resourceusageitem id="ports4bit" value="0"/>
+<resourceusageitem id="ports8bit" value="0"/>
+<resourceusageitem id="ports16bit" value="0"/>
+<resourceusageitem id="ports32bit" value="0"/>
+<resourceusageitem id="clocks" value="0"/>
+<resourceusageitem id="chanends" value="10"/>
+<resourceusageitem id="timers" value="0"/>
+<resourceusageitem id="hwtimers" value="0"/>
+<resourceusageitem id="distributed_tasks" value="0"/>
+<resourceusageitem id="combined_tasks" value="0"/>
+</resourceusage>
+</buildresult>
+<buildresult>
+<configuration>
+<parameter id="separate_mac" value="false"/>
+<parameter id="num_clients" value="1"/>
+<parameter id="combine_smi_ports" value="false"/>
+<parameter id="use_reset" value="true"/>
+</configuration>
+<resourceusage>
+<resourceusageitem id="cores" value="2"/>
+<resourceusageitem id="memory" value="0"/>
+<resourceusageitem id="codememory" value="18688"/>
+<resourceusageitem id="datamemory" value="20336"/>
+<resourceusageitem id="ports1bit" value="8"/>
+<resourceusageitem id="ports4bit" value="2"/>
+<resourceusageitem id="ports8bit" value="1"/>
+<resourceusageitem id="ports16bit" value="0"/>
+<resourceusageitem id="ports32bit" value="0"/>
+<resourceusageitem id="clocks" value="0"/>
+<resourceusageitem id="chanends" value="7"/>
+<resourceusageitem id="timers" value="1"/>
+<resourceusageitem id="hwtimers" value="0"/>
+<resourceusageitem id="distributed_tasks" value="0"/>
+<resourceusageitem id="combined_tasks" value="0"/>
+</resourceusage>
+</buildresult>
+<buildresult>
+<configuration>
+<parameter id="separate_mac" value="false"/>
+<parameter id="num_clients" value="8"/>
+<parameter id="combine_smi_ports" value="false"/>
+<parameter id="use_reset" value="true"/>
+</configuration>
+<resourceusage>
+<resourceusageitem id="cores" value="2"/>
+<resourceusageitem id="memory" value="0"/>
+<resourceusageitem id="codememory" value="18840"/>
+<resourceusageitem id="datamemory" value="20556"/>
+<resourceusageitem id="ports1bit" value="8"/>
+<resourceusageitem id="ports4bit" value="2"/>
+<resourceusageitem id="ports8bit" value="1"/>
+<resourceusageitem id="ports16bit" value="0"/>
+<resourceusageitem id="ports32bit" value="0"/>
+<resourceusageitem id="clocks" value="0"/>
+<resourceusageitem id="chanends" value="14"/>
+<resourceusageitem id="timers" value="1"/>
+<resourceusageitem id="hwtimers" value="0"/>
+<resourceusageitem id="distributed_tasks" value="0"/>
+<resourceusageitem id="combined_tasks" value="0"/>
+</resourceusage>
+</buildresult>
+</buildresults>
+</allbuildresults>
