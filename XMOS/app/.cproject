@@ -98,6 +98,19 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_xtcp/src/xtcp_uip/dhcpc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_ethernet}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_webserver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_startkit_adc/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_capacitive_sensing/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_startkit_gpio}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_capacitive_sensing}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_startkit_gpio/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_startkit_adc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_analog_tile_support/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_logging}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_analog_tile_support}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_xassert}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_analog_tile_support/doc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_logging/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_xassert/src}&quot;"/>
 								</option>
 								<inputType id="com.xmos.cdt.xc.compiler.input.976332451" name="XC" superClass="com.xmos.cdt.xc.compiler.input"/>
 							</tool>
@@ -233,6 +246,19 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_xtcp/src/xtcp_uip/dhcpc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_ethernet}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_webserver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_startkit_adc/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_capacitive_sensing/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_startkit_gpio}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_capacitive_sensing}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_startkit_gpio/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_startkit_adc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_analog_tile_support/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_logging}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_analog_tile_support}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_xassert}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_analog_tile_support/doc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_logging/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_xassert/src}&quot;"/>
 								</option>
 								<inputType id="com.xmos.cdt.c.compiler.input.c.986308244" name="C" superClass="com.xmos.cdt.c.compiler.input.c"/>
 							</tool>
@@ -374,6 +400,19 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_xtcp/src/xtcp_uip/dhcpc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_ethernet}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_webserver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_startkit_adc/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_capacitive_sensing/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_startkit_gpio}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_capacitive_sensing}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_startkit_gpio/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_startkit_adc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_analog_tile_support/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_logging}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_analog_tile_support}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_xassert}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_analog_tile_support/doc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_logging/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/module_xassert/src}&quot;"/>
 								</option>
 								<inputType id="com.xmos.cdt.cxx.compiler.input.cpp.1709014330" name="C++" superClass="com.xmos.cdt.cxx.compiler.input.cpp"/>
 							</tool>

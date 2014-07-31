@@ -1,0 +1,4 @@
+SPHINX_PROJECT_NAME = xCORE-Analog Support Library
+VERSION = 1.0
+SOURCE_INCLUDE_DIRS = ../src
+DOXYGEN_DIRS = ../src

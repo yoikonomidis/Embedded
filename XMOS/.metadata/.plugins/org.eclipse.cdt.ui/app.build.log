@@ -2,6 +2,14 @@
 **** Build of configuration Default for project app ****
 
 xmake CONFIG=Default all 
-Using modules: module_ethernet module_ethernet_board_support module_ethernet_smi module_webserver module_xtcp module_locks module_mutual_thread_comm module_otp_board_info
-xmake[1]: `bin//app.xe' is up to date.
-Build Complete
+Using modules: module_analog_tile_support module_ethernet module_ethernet_board_support module_ethernet_smi module_locks module_mutual_thread_comm module_otp_board_info module_startkit_adc module_startkit_gpio module_webserver module_xtcp module_xassert module_logging module_capacitive_sensing
+Creating dependencies for main.xc
+Compiling main.xc
+../src/main.xc: In function `test_app':
+../src/main.xc:54: warning: unused variable `alarm_time'
+../src/main.xc:71: warning: unused variable `i'
+../src/main.xc: In function `main':
+../src/main.xc:271: error: parse error before "chanend"
+../src/main.xc:255: warning: unused variable `c_sensor'
+xmake[1]: *** [.build/src/main.xc.o] Error 1
+xmake: *** [bin//app.xe] Error 2

@@ -9,7 +9,7 @@ TARGET = STARTKIT
 APP_NAME = 
 
 # The USED_MODULES variable lists other module used by the application.
-USED_MODULES = module_ethernet module_ethernet_board_support module_ethernet_smi module_webserver module_xtcp
+USED_MODULES = module_analog_tile_support module_ethernet module_ethernet_board_support module_ethernet_smi module_locks module_mutual_thread_comm module_otp_board_info module_startkit_adc module_startkit_gpio module_webserver module_xtcp
 
 # The flags passed to xcc when building the application
 # You can also set the following to override flags for a particular language:

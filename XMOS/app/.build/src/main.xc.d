@@ -30,5 +30,15 @@
   ../../XMOS/module_xtcp/src/standalone_xtcp_server.h \
   ../../XMOS/module_xtcp/src/xtcp_uip/timer.h \
   ../../XMOS/module_xtcp/src/xtcp_uip/clock.h \
-  ../../XMOS/module_xtcp/src/xtcp_uip/clock-arch.h
+  ../../XMOS/module_xtcp/src/xtcp_uip/clock-arch.h \
+  ../../XMOS/module_startkit_gpio/src/startkit_gpio.h \
+  ../../XMOS/module_capacitive_sensing/src/slider.h \
+  ../../XMOS/module_capacitive_sensing/src/absolute.h \
+  ../../XMOS/module_capacitive_sensing/src/capsens.h \
+  ../../XMOS/module_startkit_adc/src/startkit_adc.h \
+  ../../XMOS/app/src/ms_sensor.h \
+  ../../XMOS/module_analog_tile_support/src/analog_tile_support.h \
+  ../../XMOS/module_analog_tile_support/src/at_adc.h \
+  ../../XMOS/module_analog_tile_support/src/at_wdt.h \
+  ../../XMOS/module_analog_tile_support/src/at_sleep.h
 
