@@ -6,6 +6,7 @@
 #include "startkit_adc.h"
 
 out port adc_sample = ADC_TRIG_PORT;            //Trigger port for ADC - defined in STARTKIT.xn
+//extern out port adc_sample //= ADC_TRIG_PORT;            //Trigger port for ADC - defined in STARTKIT.xn
 
 #pragma select handler                          //Special function to allow select on inuint primative
 void get_adc_data(chanend c_adc, unsigned &data){

@@ -26,6 +26,7 @@
  * The port which is used to cause the ADC to take samples.
  */
 #define PORT_ADC_TRIGGER XS1_PORT_32A
+//#define PORT_ADC_TRIGGER XS1_PORT_1B
 
 /**
  * Valid bits_per_sample values (8, 16 or 32).
