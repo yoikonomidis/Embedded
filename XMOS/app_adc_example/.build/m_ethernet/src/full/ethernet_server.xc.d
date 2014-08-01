@@ -1,14 +1,15 @@
 .build/m_ethernet/src/full/ethernet_server.xc.d ./.build/m_ethernet/src/full/ethernet_server.xc.o: \
-  ../../sw_startkit_examples/module_ethernet/src/full/ethernet_server.xc \
-  ../../sw_startkit_examples/module_ethernet/src/full/mii_full.h \
-  ../../sw_startkit_examples/module_ethernet/src/include/mii.h \
-  ../../sw_startkit_examples/module_ethernet/src/common/ethernet_conf_derived.h \
-  ../../sw_startkit_examples/app_adc_example/src/ethernet_conf.h \
-  ../../sw_startkit_examples/module_xtcp/src/xtcp_conf_derived.h \
-  ../../sw_startkit_examples/module_ethernet/src/full/mii_queue.h \
-  ../../sw_startkit_examples/module_ethernet_smi/src/smi.h \
-  ../../sw_startkit_examples/module_ethernet_board_support/STARTKIT/ethernet_board_conf.h \
-  ../../sw_startkit_examples/module_ethernet/src/full/mii_wrappers.h \
-  ../../sw_startkit_examples/module_ethernet/src/full/mii_filter.h \
-  ../../sw_startkit_examples/module_ethernet/src/full/mii_malloc.h
+  D:/Users/dmamalis/workspace/KiDiYa/Embedded/XMOS/module_ethernet/src/full/ethernet_server.xc \
+  D:/Users/dmamalis/workspace/KiDiYa/Embedded/XMOS/module_ethernet/src/full/mii_full.h \
+  D:/Users/dmamalis/workspace/KiDiYa/Embedded/XMOS/module_ethernet/src/include/mii.h \
+  D:/Users/dmamalis/workspace/KiDiYa/Embedded/XMOS/module_ethernet/src/common/ethernet_conf_derived.h \
+  D:/Users/dmamalis/workspace/KiDiYa/Embedded/XMOS/app_adc_example/src/ethernet_conf.h \
+  D:/Users/dmamalis/workspace/KiDiYa/Embedded/XMOS/module_xtcp/src/xtcp_conf_derived.h \
+  D:/Users/dmamalis/workspace/KiDiYa/Embedded/XMOS/module_ethernet/src/full/mii_queue.h \
+  D:/Users/dmamalis/workspace/KiDiYa/Embedded/XMOS/module_ethernet_smi/src/smi.h \
+  D:/Users/dmamalis/workspace/KiDiYa/Embedded/XMOS/module_ethernet_board_support/STARTKIT/ethernet_board_conf.h \
+  D:/Users/dmamalis/workspace/KiDiYa/Embedded/XMOS/module_ethernet/src/full/mii_wrappers.h \
+  D:/Users/dmamalis/workspace/KiDiYa/Embedded/XMOS/module_ethernet/src/full/mii_filter.h \
+  D:/Users/dmamalis/workspace/KiDiYa/Embedded/XMOS/module_ethernet/src/full/mii_malloc.h
+
 

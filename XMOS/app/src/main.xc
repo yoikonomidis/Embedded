@@ -1,13 +1,16 @@
-#include "webclient.h"
-#include "ethernet_board_support.h"
-#include "xtcp.h"
-#include <stdio.h>
-#include <timer.h>
+#include <xs1.h>
+#include <platform.h>
 #include <print.h>
 #include <xscope.h>
 #include <stdlib.h>
 #include "startkit_gpio.h"
 #include "startkit_adc.h"
+#include <stdio.h>
+
+#include "webclient.h"
+#include "ethernet_board_support.h"
+#include "xtcp.h"
+#include <timer.h>
 #include "ms_sensor.h"
 #include "analog_tile_support.h"
 
@@ -41,7 +44,7 @@ xtcp_ipconfig_t client_ipconfig = {
 };
 
 server_config_t server_config = {
-  {192,168,0,4},
+  {192,168,3,127},
   3000 ,
   3000
 };
@@ -54,15 +57,15 @@ char ws_data_wake[] = "Button = bbb; Temperature = ttt; Joystick X = xxx, Y = yy
 char ws_data_node[] = "http://localhost:3000/vehicleList";
 
 
-void app(client startkit_led_if i_leds, client startkit_button_if i_button, client startkit_adc_if i_adc)
+void app(client startkit_led_if i_leds, client startkit_button_if i_button, client startkit_adc_if i_adc, chanend c_sensor)
 {
   timer t_loop;                 //Loop timer
   int loop_time;                //Loop time comparison variable
-
+  int hold;
   unsigned short adc_val[4] = {0, 0, 0, 0};//ADC vals
 
-  printstrln("App started");
-
+  printf("App started");
+  c_sensor :> hold;
   t_loop :> loop_time;          //Take the initial timestamp of the 100Mhz timer
   loop_time += LOOP_PERIOD;     //Set comparison to future time
   while (1) {
@@ -76,7 +79,7 @@ void app(client startkit_led_if i_leds, client startkit_button_if i_button, clie
           i_leds.set(0, 2, LED_ON);
       }
       else {
-          printstrln("Button released!");
+//          printstrln("Button released!");
           i_leds.set(2, 2, LED_OFF);
           i_leds.set(1, 2, LED_OFF);
           i_leds.set(0, 2, LED_OFF);
@@ -91,11 +94,11 @@ void app(client startkit_led_if i_leds, client startkit_button_if i_button, clie
     case i_adc.complete():      //Notification from ADC server when aquisition complete
       i_adc.read(adc_val);      //Get the values (and clear the notfication)
       for(int i = 0; i < 4; i++){
-        printstr("ADC chan ");
-        printint(i);
-        printstr(" = ");
-        printint(adc_val[i]);
-        if (i < 3) printstr(", ");
+//        printstr("ADC chan ");
+//        printint(i);
+//        printstr(" = ");
+//        printint(adc_val[i]);
+//        if (i < 3) printstr(", ");
         switch (i){             //Map ADC channels to align with LEDs on startKIT
           case 0:
             i_leds.set(1, 1, adc_val[i]);
@@ -111,12 +114,11 @@ void app(client startkit_led_if i_leds, client startkit_button_if i_button, clie
             break;
           }
         }
-      printchar('\n');
+//      printchar('\n');
       break;
     }//select
   }//while 1
 }
-
 /*---------------------------------------------------------------------------
  ethernet_sleep_wake_handler
  ---------------------------------------------------------------------------*/
@@ -142,15 +144,19 @@ void ethernet_sleep_wake_handler(chanend c_sensor, chanend c_xtcp)
   // Enable timer and LDR wake sources
   at_pm_enable_wake_source(RTC);
   // Delay for some time to start web server on the host computer
-  if(fresh_start) delay_seconds(10);
+  if(fresh_start) delay_seconds(2);
   // Set webserver parameters
   webclient_set_server_config(server_config);
+  printf("Server configured\n");
   // Initialize web client
   webclient_init(c_xtcp);
+  printf("Webclient initialized\n");
   // Connect to webserver
   webclient_connect_to_server(c_xtcp);
+  printf("Connected to server\n");
   // Send notification to begin recording sensor data
   webclient_send_data(c_xtcp, ws_data_notify);
+  printf("Recording sensor\n");
   // Connected to server. The sensor handler can now begin to record data.
   c_sensor <: 1;
 
@@ -219,15 +225,17 @@ int main(void)
 
   par
   {
-    on ETHERNET_DEFAULT_TILE: ethernet_xtcp_server(xtcp_ports, client_ipconfig, c_xtcp, 1);
-    on tile[0]: ethernet_sleep_wake_handler(c_sensor, c_xtcp[0]);
 //    on tile[0]: mixed_signal_slice_sensor_handler(c_sensor, c_adc_2, trigger_port, p_sw1);
     on tile[0].core[0]: startkit_gpio_driver(i_led, i_button,//Run GPIO task for leds/button
                                                  null, null,
                                                  gpio_ports);
     on tile[0].core[0]: adc_task(i_adc, c_adc, 0);           //Run ADC server task (on same core as GPIO!)
-    on tile[0]: app(i_led, i_button, i_adc);                 //Run the app
-    startkit_adc(c_adc_2);                                   //Declare the ADC service (this is the ADC hardware, not a task)
+    startkit_adc(c_adc);                                     //Declare the ADC service (this is the ADC hardware, not a task)
+    on ETHERNET_DEFAULT_TILE: ethernet_xtcp_server(xtcp_ports, client_ipconfig, c_xtcp, 1);
+    on tile[0]: ethernet_sleep_wake_handler(c_sensor, c_xtcp[0]);
+    on tile[0]: app(i_led, i_button, i_adc, c_sensor);                 //Run the app
+
+
 
   } // par
   return 0;

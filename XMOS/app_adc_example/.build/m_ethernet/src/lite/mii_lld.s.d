@@ -1,3 +1,4 @@
 .build/m_ethernet/src/lite/mii_lld.s.d ./.build/m_ethernet/src/lite/mii_lld.s.o: \
-  ../../sw_startkit_examples/module_ethernet/src/lite/mii_lld.S
+  D:/Users/dmamalis/workspace/KiDiYa/Embedded/XMOS/module_ethernet/src/lite/mii_lld.S
+
 

@@ -3,13 +3,4 @@
 
 xmake CONFIG=Default all 
 Using modules: module_analog_tile_support module_ethernet module_ethernet_board_support module_ethernet_smi module_locks module_mutual_thread_comm module_otp_board_info module_startkit_adc module_startkit_gpio module_webserver module_xtcp module_xassert module_logging module_capacitive_sensing
-Creating dependencies for startkit_adc.xc
-Creating dependencies for main.xc
-Compiling main.xc
-../src/main.xc: In function `main':
-../src/main.xc:228: warning: `c_adc' not used in two parallel statements
-../src/main.xc:230: warning: `c_adc_2' not used in two parallel statements
-../src/main.xc:223: warning: `c_sensor' not used in two parallel statements
-Compiling startkit_adc.xc
-Creating app.xe
 Build Complete
